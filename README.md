@@ -10,6 +10,12 @@
  Password : admin
  
 # Program Logistik Barang
+## Fitur
+ 1. Crud Kategori
+ 2. Crud Gudang
+ 3. Crud Barang
+ 4. Crud User
+ 5. Login System
 # Project UTS Internet Publisher Lanjut
 
 
