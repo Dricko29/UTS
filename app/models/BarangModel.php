@@ -17,7 +17,6 @@
             return $this->db->resultSet();
         }
 
-
         public function tambahBarang($data)
         {
             $query = "INSERT INTO barang (nama_barang,harga,stok,id_kategori,id_gudang) VALUES(:nama_barang,:harga,:stok,:id_kategori,:id_gudang)";
@@ -37,6 +36,7 @@
             $this->db->bind('id',$id);
             return $this->db->single();
         }
+
 
         public function updateDataBarang($data)
         {

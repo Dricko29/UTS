@@ -40,15 +40,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum."
-                        </p>
+
+
+                        <div class="card-body">
+                             <!-- order-card start -->
+                            <div class="row">
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-blue order-card">
+                                        <div class="card-body">
+                                            <h6 class="text-white">Orders Received</h6>
+                                            <h2 class="text-right text-white"><i class="feather icon-shopping-cart float-left"></i><span>486</span></h2>
+                                            <p class="m-b-0">Completed Orders<span class="float-right">351</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-green order-card">
+                                        <div class="card-body">
+                                            <h6 class="text-white">Total Sales</h6>
+                                            <h2 class="text-right text-white"><i class="feather icon-tag float-left"></i><span>1641</span></h2>
+                                            <p class="m-b-0">This Month<span class="float-right">213</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-yellow order-card">
+                                        <div class="card-body">
+                                            <h6 class="text-white">Revenue</h6>
+                                            <h2 class="text-right text-white"><i class="feather icon-repeat float-left"></i><span>$42,562</span></h2>
+                                            <p class="m-b-0">This Month<span class="float-right">$5,032</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="card bg-c-red order-card">
+                                        <div class="card-body">
+                                            <h6 class="text-white">Total Profit</h6>
+                                            <h2 class="text-right text-white"><i class="feather icon-award float-left"></i><span>$9,562</span></h2>
+                                            <p class="m-b-0">This Month<span class="float-right">$542</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- order-card end -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- [ sample-page ] end -->
+
         </div>
         <!-- [ Main Content ] end -->
     </div>

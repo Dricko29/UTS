@@ -47,15 +47,6 @@
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
-					<div class="search-bar">
-						<input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
-						<button type="button" class="close" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-				</li>
-				<li class="nav-item">
 					<a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a>
 				</li>
 			</ul>
@@ -63,20 +54,18 @@
 				<li>
 					<div class="dropdown drp-user">
 						<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
-							<img src="<?= base_url; ?>/assets/images/user/avatar-1.jpg" class="img-radius wid-40" alt="User-Profile-Image">
+							<img src="<?= base_url; ?>/assets/images/user/avatar-4.jpg" class="img-radius wid-40" alt="User-Profile-Image">
 						</a>
 						<div class="dropdown-menu dropdown-menu-right profile-notification">
 							<div class="pro-head">
-								<img src="<?= base_url; ?>/assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-								<span>John Doe</span>
-								<a href="auth-signin.html" class="dud-logout" title="Logout">
+								<img src="<?= base_url; ?>/assets/images/user/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+								<span>Admin</span>
+								<a href="<?= base_url;?>/logout" class="dud-logout" title="Logout">
 									<i class="feather icon-log-out"></i>
 								</a>
 							</div>
 							<ul class="pro-body">
-								<li><a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
-								<li><a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
-								<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+								<li><a href="#" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
 							</ul>
 						</div>
 					</div>

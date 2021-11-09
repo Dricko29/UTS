@@ -1,14 +1,14 @@
 <?php 
 
     class User extends Controller {
-    // public function __construct()
-    // {
-    //     if($_SESSION['session_login'] != 'sudah_login') {
-    //         Flasher::setMessage('Login','Tidak ditemukan.','danger');
-    //         header('location: '. base_url . '/login');
-    //         exit;
-    //     }
-    // }
+    public function __construct()
+    {
+        if($_SESSION['session_login'] != 'sudah_login') {
+            Flasher::setMessage('Login','Tidak ditemukan.','danger');
+            header('location: '. base_url . '/login');
+            exit;
+        }
+    }
     public function index()
     {
         $data['title'] = 'Data User';
@@ -19,16 +19,6 @@
         $this->view('templates/footer');
     }
 
-    public function cari()
-    {
-        $data['title'] = 'Data User';
-        $data['user'] = $this->model('UserModel')->cariUser();
-        $data['key'] = $_POST['key'];
-        $this->view('templates/header', $data);
-        $this->view('templates/sidebar', $data);
-        $this->view('user/index', $data);
-        $this->view('templates/footer');
-    }
 
     public function tambah()
     {
