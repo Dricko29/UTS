@@ -39,7 +39,7 @@
                          <form role="form" action="<?= base_url; ?>/gudang/updateGudang" method="POST" enctype="multipart/form-data">
 
                                 <div class="form-group">
-                                    <input type="hidden" name="id" value="<?= $data['gudang']['id']; ?>">
+                                    <input type="hidden" name="id_gudang" value="<?= $data['gudang']['id_gudang']; ?>">
                                     <label >Nama Gudang</label>
                                     <input type="text" class="form-control" placeholder="masukkan gudang..." name="gudang" value="<?= $data['gudang']['gudang']; ?>">
                                 </div>

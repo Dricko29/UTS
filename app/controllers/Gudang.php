@@ -34,10 +34,10 @@
                 exit;
             }
         }
-        public function edit($id)
+        public function edit($id_gudang)
         {
             $data['title'] = 'Detail Gudang';
-            $data['gudang'] = $this->model('GudangModel')->getGudangById($id);
+            $data['gudang'] = $this->model('GudangModel')->getGudangById($id_gudang);
             $this->view('templates/header', $data);
             $this->view('templates/sidebar', $data);
             $this->view('gudang/edit', $data);
@@ -57,9 +57,9 @@
         
         }
 
-        public function hapus($id)
+        public function hapus($id_gudang)
         {
-            if ($this->model('GudangModel')->deleteGudang($id) > 0) {
+            if ($this->model('GudangModel')->deleteGudang($id_gudang) > 0) {
                 Flasher::setMessage('Berhasil', 'dihapus','success');
                 header('location: '. base_url .'/gudang');
                 exit;

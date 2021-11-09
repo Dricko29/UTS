@@ -54,7 +54,7 @@
                                         <td><?=$no;?></td>
                                         <td><?=$row['gudang'];?></td>
                                         <td>
-                                             <a href="<?= base_url; ?>/gudang/edit/<?= $row['id'] ?>" class="btn btn-sm btn-info ">Edit</a> <a href="<?= base_url; ?>/gudang/hapus/<?= $row['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus data?');">Hapus</a>
+                                             <a href="<?= base_url; ?>/gudang/edit/<?= $row['id_gudang'] ?>" class="btn btn-sm btn-info ">Edit</a> <a href="<?= base_url; ?>/gudang/hapus/<?= $row['id_gudang'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus data?');">Hapus</a>
                                         </td>
 
                                     </tr>

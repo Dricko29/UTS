@@ -34,10 +34,10 @@
                 exit;
             }
         }
-        public function edit($id)
+        public function edit($id_kategori)
         {
             $data['title'] = 'Detail Kategori';
-            $data['kategori'] = $this->model('KategoriModel')->getKategoriById($id);
+            $data['kategori'] = $this->model('KategoriModel')->getKategoriById($id_kategori);
             $this->view('templates/header', $data);
             $this->view('templates/sidebar', $data);
             $this->view('kategori/edit', $data);
@@ -57,9 +57,9 @@
         
         }
 
-        public function hapus($id)
+        public function hapus($id_kategori)
         {
-            if ($this->model('KategoriModel')->deleteKategori($id) > 0) {
+            if ($this->model('KategoriModel')->deleteKategori($id_kategori) > 0) {
                 Flasher::setMessage('Berhasil', 'dihapus','success');
                 header('location: '. base_url .'/kategori');
                 exit;

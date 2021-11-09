@@ -25,27 +25,27 @@ class GudangModel {
         return $this->db->rowCount();
     }
 
-    public function getGudangById($id)
+    public function getGudangById($id_gudang)
     {
-        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id =:id');
-        $this->db->bind('id',$id);
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_gudang =:id_gudang');
+        $this->db->bind('id_gudang',$id_gudang);
         return $this->db->single();
     }
 
     public function updateDataGudang($data)
     {
-        $query = "UPDATE gudang SET gudang=:gudang WHERE id =:id";
+        $query = "UPDATE gudang SET gudang=:gudang WHERE id_gudang =:id_gudang";
         $this->db->query($query);
-        $this->db->bind('id',$data['id']);
+        $this->db->bind('id_gudang',$data['id_gudang']);
         $this->db->bind('gudang',$data['gudang']);
         $this->db->execute();
         return $this->db->rowCount();
     }
 
-    public function deleteGudang($id)
+    public function deleteGudang($id_gudang)
     {
-        $this->db->query('DELETE FROM ' . $this->table . ' WHERE id =:id');
-        $this->db->bind('id',$id);
+        $this->db->query('DELETE FROM ' . $this->table . ' WHERE id_gudang =:id_gudang');
+        $this->db->bind('id_gudang',$id_gudang);
         $this->db->execute();
         return $this->db->rowCount();
     }

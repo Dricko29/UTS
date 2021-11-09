@@ -39,7 +39,7 @@
                          <form role="form" action="<?= base_url; ?>/kategori/updateKategori" method="POST" enctype="multipart/form-data">
 
                                 <div class="form-group">
-                                    <input type="hidden" name="id" value="<?= $data['kategori']['id']; ?>">
+                                    <input type="hidden" name="id_kategori" value="<?= $data['kategori']['id_kategori']; ?>">
                                     <label >Nama Kategori</label>
                                     <input type="text" class="form-control" placeholder="masukkan kategori..." name="nama_kategori" value="<?= $data['kategori']['nama_kategori']; ?>">
                                 </div>
