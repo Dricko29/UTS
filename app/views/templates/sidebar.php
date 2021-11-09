@@ -13,10 +13,10 @@
 						<a href="<?= base_url;?>/kategori" class="nav-link "><span class="pcoded-micon"><i class="fas fa-th-list"></i></span><span class="pcoded-mtext">Kategori</span></a>
 					</li>
 					<li class="nav-item">
-						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-box"></i></span><span class="pcoded-mtext">Data Barang</span></a>
+						<a href="<?= base_url;?>/barang" class="nav-link "><span class="pcoded-micon"><i class="fas fa-box"></i></span><span class="pcoded-mtext">Data Barang</span></a>
 					</li>
 					<li class="nav-item">
-						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Gudang</span></a>
+						<a href="<?= base_url;?>/gudang" class="nav-link "><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">Gudang</span></a>
 					</li>
 					<li class="nav-item">
 						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user"></i></span><span class="pcoded-mtext">User</span></a>

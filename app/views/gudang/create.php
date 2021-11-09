@@ -11,8 +11,8 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="<?= base_url;?>/home"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="<?= base_url;?>/kategori">Halaman Kategori</a></li>
-                            <li class="breadcrumb-item"><a href="#"><?= $data['title'] ;?></a></li>
+                            <li class="breadcrumb-item"><a href="<?= base_url;?>/gudang">Halaman Gudang</a></li>
+                            <li class="breadcrumb-item"><a href="#">Tambah Gudang</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,21 +27,20 @@
                     <div class="card-header table-card-header">
                         <div class="row">
                            <div class="col-sm-6">
-                                <h3>Data Kategori</h3>
+                                <h3>Data Gudang</h3>
                            </div> 
 
                            <div class="col-sm-6">
-                                <a href="<?= base_url;?>/kategori" class="btn float-right btn-xs btn btn-primary">Kembali</a>
+                                <a href="<?= base_url;?>/gudang" class="btn float-right btn-xs btn btn-primary">Kembali</a>
                            </div> 
                         </div>
                     </div>
                     <div class="card-body">
-                         <form role="form" action="<?= base_url; ?>/kategori/updateKategori" method="POST" enctype="multipart/form-data">
+                         <form role="form" action="<?= base_url; ?>/gudang/simpanGudang" method="POST" enctype="multipart/form-data">
 
                                 <div class="form-group">
-                                    <input type="hidden" name="id" value="<?= $data['kategori']['id']; ?>">
-                                    <label >Nama Kategori</label>
-                                    <input type="text" class="form-control" placeholder="masukkan kategori..." name="nama_kategori" value="<?= $data['kategori']['nama_kategori']; ?>">
+                                    <label >Nama Gudang</label>
+                                    <input type="text" class="form-control" placeholder="masukkan gudang..." name="gudang">
                                 </div>
           
 
