@@ -8,3 +8,7 @@
 # Program Logistik Barang
 # Project UTS Internet Publisher Lanjut
 
+# Default Akses
+ Username : admin
+ Password : admin
+
